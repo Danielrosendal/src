@@ -6,18 +6,18 @@
  */
 public class QueryMessage extends MessageBase {
 
-	private int eventId;
+	private int m_eventId;
 
-	public QueryMessage()
+	public QueryMessage(int eventId)
 	{
-		
+		m_eventId = eventId; 
 	}
 	
 	public int getEventId() {
-		return eventId;
+		return m_eventId;
 	}
 
 	public void setEventId(int eventId) {
-		this.eventId = eventId;
+		this.m_eventId = eventId;
 	}
 }
